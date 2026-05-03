@@ -35,6 +35,7 @@
       margin: 0.5rem 0;
     }
 
+    /* --- RESUME STYLES --- */
     .resume-container {
       max-width: 900px;
       margin: 2rem auto;
@@ -54,6 +55,7 @@
     .resume-container h3 {
       margin-bottom: 0.2rem;
       color: #333;
+      margin-top: 1.5rem;
     }
 
     .resume-container p, .resume-container ul {
@@ -74,6 +76,7 @@
     .resume-section:last-child {
       margin-bottom: 0;
     }
+    /* ------------------------- */
 
     .project {
       display: flex;
@@ -97,16 +100,26 @@
     }
 
     .project-content h2 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.2rem;
       font-size: 1.8rem;
       color: #1565c0;
       text-align: left;
+    }
+
+    .project-content .subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0.8rem;
     }
 
     .project-content p {
       font-size: 1rem;
       line-height: 1.6;
       flex: 1; 
+      text-align: left;
     }
 
     footer {
@@ -129,7 +142,6 @@
 
       .project-content {
         flex: 1; 
-        text-align: left;
       }
 
       .project img {
@@ -164,7 +176,7 @@
   <section class="resume-container">
     <h2>About Me</h2>
     <p>
-      I am a high school student with a passion for robotics, coding, and technology, actively seeking opportunities to teach and mentor younger students. I am always eager to share my experience in designing, building, and programming robots and electronics projects. As a strong communicator and adaptable team player, my greatest soft skill is efficiently explaining complex concepts from the foundation up. To apply this, I run a solo tutoring business teaching math and programming to kids, while also regularly tutoring my peers. I also enjoy volunteering; recently, I ran the junior VEX V5 section for my school's STEM Day, teaching visiting students how to drive the robots. 
+      I am a high school student with a passion for robotics, coding, and technology, actively seeking opportunities to teach and mentor younger students. I am always eager to share my experience in designing, building, and programming robots and electronics projects. As a strong communicator and adaptable team player, my greatest soft skill is efficiently explaining complex concepts from the foundation up. To apply this, I run a solo tutoring business teaching math and programming to kids, while also regularly tutoring my peers. I also enjoy volunteering; recently, I ran the junior VEX V5 section for my school's STEM day, teaching visiting students how to drive the robots. 
     </p>
   </section>
 
@@ -174,6 +186,7 @@
     </div>
     <div class="project-content">
       <h2>3D Renderer and Flight Sim, From Scratch</h2>
+      <p class="subtitle">(Apologies for the audio quality in the demo video, I didn't have access to my professional mic!)</p>
       <p>
         Programmed a 3D renderer in Java, completely from scratch, without copying tutorials. The only libraries it uses are a library for coloring pixels on a window. I learned about linear algebra, rendering and rasterising, then used my knowledge to create the project. Later I added multiplayer functionality.
       </p>
@@ -218,7 +231,7 @@
     <img src="images/turret.jpg" alt="Tracking Turret" />
     <div class="project-content">
       <h2>Real Life Portal Turret with AI vision (In-progress)</h2>
-      <p>A 3D printed turret that tracks a person as they walk through the room and “shoots” at them with LED lights. I greatly improved my soldering skills when making the project..</p>
+      <p>A 3D printed turret that tracks a person as they walk through the room and “shoots” at them with LED lights. I greatly improved my soldering skills when making the project.</p>
     </div>
   </section>
 
@@ -241,8 +254,15 @@
         <li><strong>Programming:</strong> Java, Python, C++ and Block-based Coding (E.g. Scratch)</li>
         <li>Experienced with CAD tools like Tinkercad, SketchUp and Fusion360 (for VEX V5)</li>
         <li>Strong communication skills and patience when teaching others. My greatest soft skill is efficiently explaining complex concepts, starting from the foundations.</li>
-        <li>I enjoy teaching, and always try to volunteer at positions that allow me to do so. For example I ran the junior VEX V5 section for STEM day for the visiting students, and taught them how to drive the robot.</li>
+        <li>I enjoy teaching, and always try to volunteer at positions that allow me to do so.</li>
+      </ul>
+    </div>
+
+    <div class="resume-section">
+      <h2>Job/Volunteering</h2>
+      <ul>
         <li>I run a solo tutoring business, teaching kids math and programming, while also regularly tutoring my sister and classmates.</li>
+        <li>I always volunteer at any STEM related events, such as running the junior VEX V5 section for STEM day teaching the kids how the robot works and how to drive it, and open house for my Computer Engineering class, showcasing my projects.</li>
       </ul>
     </div>
 
@@ -251,13 +271,13 @@
       <h3>Skills Regional Vex Competition– [March, 2026]</h3>
       <ul>
         <li>Got Second at the YRSC for VEX V5 robotics, moving onto provincial competition.</li>
-        <li>Led the junior team to create a functioning robot in less than 1 week for the schools STEM day</li>
+        <li>Led the junior team to create a functioning robot in less than 1 week for the school's STEM day.</li>
       </ul>
 
       <h3>McMaster Sumo Bot Competition: First Place– [January, 2025]</h3>
       <ul>
         <li>Main developer for a robot controller to compete in an autonomous sumo wrestling competition.</li>
-        <li>Collaborated with teammates to: build, debug, and optimize the robot operations</li>
+        <li>Collaborated with teammates to: build, debug, and optimize the robot operations.</li>
       </ul>
 
       <h3>School Awards</h3>
