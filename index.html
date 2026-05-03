@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
+      background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
       color: #222;
       scroll-behavior: smooth;
     }
@@ -33,6 +33,48 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
       font-size: 1.1rem;
       color: #555;
     }
+
+    /* --- NEW RESUME STYLES --- */
+    .resume-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .resume-container h2 {
+      color: #1565c0;
+      border-bottom: 2px solid #e3f2fd;
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    .resume-container h3 {
+      margin-bottom: 0.2rem;
+      color: #333;
+    }
+
+    .resume-container p, .resume-container ul {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .resume-container ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    
+    .resume-section {
+      margin-bottom: 2rem;
+    }
+
+    .resume-section:last-child {
+      margin-bottom: 0;
+    }
+    /* ------------------------- */
 
     .project {
       display: flex;
@@ -78,7 +120,6 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
     @media (min-width: 768px) {
       .project {
         flex-direction: row;
-        /*justify-content: space-between;*/
         gap: 2rem;
         padding: 3rem 4rem;
       }
@@ -92,8 +133,6 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
         text-align: left;
       }
 
-    
-
       .project img {
         margin-bottom: 0;
       }
@@ -103,14 +142,14 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
         max-width: 800px;
         aspect-ratio: 16 / 9;
         flex-shrink: 0;
-        }
+      }
 
-        .project-media iframe {
+      .project-media iframe {
         width: 100%;
         height: 100%;
         border: none;
         display: block;
-        }
+      }
     }
   </style>
 </head>
@@ -120,8 +159,29 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
     <h1>Ivan Kirischian's Projects Page</h1>
     <p>Computer Science • Engineering • Design</p>
     <p>Resume: <a href="images/Resume-IvanKirischian.pdf" target="_blank">Open PDF</a> </p>
-    
   </header>
+
+  <section class="resume-container">
+    <h2>About Me</h2>
+    <p>
+      I am a high school student with a passion for robotics, coding, and tech, seeking an opportunity to teach and mentor younger students. I am always eager to share my experience in designing, building, and programming robots and electronics projects. I am a good communicator, quickly adapt to new environments, and a team player.
+    </p>
+    <p>
+      I enjoy teaching, and always try to volunteer at positions that allow me to do so. For example, I ran the junior VEX V5 section for STEM day for the visiting students, and taught them how to drive the robot. I also regularly tutor my sister and classmates.
+    </p>
+  </section>
+
+  <section class="project">
+    <div class="project-media">
+      <iframe src="https://www.youtube.com/embed/sV5vcwukAoQ" title="3D Renderer and Flight Sim Demo" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="project-content">
+      <h2>3D Renderer and Flight Sim, From Scratch</h2>
+      <p>
+        Programmed a 3D renderer completely from scratch, and not using any tutorials. The only libraries it uses are a library for coloring pixels on a window. I learned about linear algebra, rendering and rasterising, then used my knowledge to create the project. Later I added multiplayer functionality.
+      </p>
+    </div>
+  </section>
 
   <section class="project">
     <div class="project-media">
@@ -163,6 +223,51 @@ background: radial-gradient(circle at center, #f0faff, #d9f0ff, #b3e5fc);
       <h2>AI-Powered Tracking Turret (In Progress)</h2>
       <p>A 3d printed turret that tracks a person as they walk through the room and “shoots” at them with LED lights. I greatly improved my soldering skills when making the body. I want integrate the GLaDOS assistant with this project, so I can have my own moving and customized AI assistant. </p>
     </div>
+  </section>
+
+  <section class="resume-container">
+    
+    <div class="resume-section">
+      <h2>Education</h2>
+      <h3>Thornhill Secondary School</h3>
+      <p>Grade 11 Student | Expected Graduation: 2027</p>
+      <ul>
+        <li><strong>Relevant Courses:</strong> Computer Science (Grade 12: 98%, Grade 11: 97%), Computer Engineering (Grade 12: 97%, Grade 11: 100%)</li>
+        <li><strong>Extracurriculars:</strong> Member of Robotics Club (Incoming President), Coding Club</li>
+      </ul>
+    </div>
+
+    <div class="resume-section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Robotics/Electronics:</strong> VexV5, Arduino, Mbot, Microbit, LEGO Mindstorms</li>
+        <li><strong>Programming:</strong> Java, Python, C++, Block-based Coding (e.g., Scratch)</li>
+        <li><strong>CAD/Design:</strong> Tinkercad, SketchUp, Fusion360 (for VEX V5)</li>
+        <li><strong>Soft Skills:</strong> Efficiently explaining complex concepts from the foundation up, strong communication, adaptability, and teamwork.</li>
+      </ul>
+    </div>
+
+    <div class="resume-section">
+      <h2>Awards & Achievements</h2>
+      <h3>Skills Regional Vex Competition (March 2026)</h3>
+      <ul>
+        <li>Secured 2nd place at the YRSC for VEX V5 robotics, advancing to the provincial competition.</li>
+        <li>Led the junior team to create a functioning robot in under 1 week for the school's STEM day.</li>
+      </ul>
+
+      <h3>McMasters Sumo Bot Competition (January 2025)</h3>
+      <ul>
+        <li><strong>First Place:</strong> Main developer for a robot controller competing in an autonomous sumo wrestling competition.</li>
+        <li>Collaborated with teammates to build, debug, and optimize robot operations.</li>
+      </ul>
+
+      <h3>School Awards</h3>
+      <ul>
+        <li>Top of the class for Grade 12 Computer Science (completed in grade 11).</li>
+        <li>Top of the class for Grade 11 Computer Science (completed in grade 10).</li>
+      </ul>
+    </div>
+
   </section>
 
   <footer>
